@@ -8,12 +8,13 @@ float total, total1;
 
 void Comida()
 {
-			
+	
+	
 	
 	printf("Menu Comida: \n");
     printf("[1] - Arroz - R$ 4.00\n");
-    printf("[2] - Macarrão - R$ 4.00\n");
-    printf("[3] - Feijão - R$ 4.00\n");
+    printf("[2] - MacarrÃ£o - R$ 4.00\n");
+    printf("[3] - FeijÃ£o - R$ 4.00\n");
     printf("Acompanhamentos: \n");
 	printf("[4] - Bife - R$ 6.00\n");
     printf("[5] - Frango - R$ 6.00\n");
@@ -28,7 +29,7 @@ void Comida()
 	printf("[21] - Mostrar cardapio Acompanhamentos\n");	
 	printf("[22] - Reiniciar este pedido(s)\n");
 	printf("[24] - Para encerrar o pedido e participar do QUIZ\n");
-	printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoção 'O dedo duro'!)\n");
+	printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoÃ§Ã£o 'O dedo duro'!)\n");
 }
 
 void Bebida()
@@ -48,15 +49,15 @@ void Bebida()
 	printf("[21] - Mostrar cardapio Acompanhamentos\n");
 	printf("[22] - Reiniciar este pedido(s)\n");
 	printf("[24] - Para encerrar o pedido e participar do QUIZ\n");
-	printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoção 'O dedo duro'!)\n");
+	printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoÃ§Ã£o 'O dedo duro'!)\n");
 }
 
 void Acompanhamento()
 {
 	printf("Menu Acompanhamentos: \n");
-	printf("[15] - Porção de Batatas - R$ 5.00\n");
-    printf("[16] - Porção de Bacon - R$ 5.00\n");
-    printf("[17] - Porção de Mandioca - R$ 5.00\n");	
+	printf("[15] - PorÃ§Ã£o de Batatas - R$ 5.00\n");
+    printf("[16] - PorÃ§Ã£o de Bacon - R$ 5.00\n");
+    printf("[17] - PorÃ§Ã£o de Mandioca - R$ 5.00\n");	
     printf("\n---------------------------------------------------------------------------------\n");
 	printf("[18] - Encerrar esse pedido e ir para o proximo ou encerrar e ter o total\n");
 	printf("[19] - Mostrar cardapio Comidas\n");
@@ -64,33 +65,33 @@ void Acompanhamento()
 	printf("[21] - Mostrar cardapio Acompanhamentos novamente\n");
 	printf("[22] - Reiniciar este pedido(s)\n");
 	printf("[24] - Para encerrar o pedido e participar do QUIZ\n");
-	printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoção 'O dedo duro'!)\n");
+	printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoÃ§Ã£o 'O dedo duro'!)\n");
 }  
 
 void Quiz(char quiz[])
 {	
-	printf("Obrigado por participar do nosso QUIZ!, responda nossas perguntas e na proxima visita voçê ganhara um incrivel....COPOOO D'AGUA!!!!!");
-    printf("\n\n...Sério que voçê ira participar? não tem água em casa não?\n");
+	printf("Obrigado por participar do nosso QUIZ!, responda nossas perguntas e na proxima visita voÃ§Ãª ganhara um incrivel....COPOOO D'AGUA!!!!!");
+    printf("\n\n...SÃ©rio que voÃ§Ãª ira participar? nÃ£o tem Ã¡gua em casa nÃ£o?\n");
 	printf("\n\n...Tai ainda?\n\n...Precisa acertar tudo para ganhar os brindes, boa sorte!!!;\n");
 	while(1){
-		printf("\nQual é a comida que liga e desliga?\n");
+		printf("\nQual Ã© a comida que liga e desliga?\n");
 		scanf("%s", quiz);
 		if(stricmp(quiz, "strogonoff")== 0){
-			printf("ata...voçê acertou!!!!!... - programa resmungando...(Droga, *#@#@ &#*@& #@*&#)\n");
+			printf("ata...voÃ§Ãª acertou!!!!!... - programa resmungando...(Droga, *#@#@ &#*@& #@*&#)\n");
 			contadorQuiz+=1;
 		}else{
 			printf("ERRROOOOOOOOOOOOU!!!!!...\n");
 		}
-		printf("\nCom qual país da pra se fazer omelete?\n(acertos = %d /3)\n", contadorQuiz);
+		printf("\nCom qual paÃ­s da pra se fazer omelete?\n(acertos = %d /3)\n", contadorQuiz);
 		scanf("%s", quiz);
 		if(stricmp(quiz, "kosovo")== 0){
-			printf("voçê acertou!!!!!... - programa resmungando mais...(*#@#@ &#*@& #@*&#)\n");
+			printf("voÃ§Ãª acertou!!!!!... - programa resmungando mais...(*#@#@ &#*@& #@*&#)\n");
 			contadorQuiz+=1;
 
 		}else{
 			printf("ERRROOOOOOOOOOOOU!!!!!...\n");
 		}
-		printf("\nQual é o doce que gosta de brigar?\n(acertos = %d /3)\n", contadorQuiz);
+		printf("\nQual Ã© o doce que gosta de brigar?\n(acertos = %d /3)\n", contadorQuiz);
 		scanf("%s", quiz);
 		if(stricmp(quiz, "brigadeiro")== 0){
 			printf("Aaaah mizeravi acertouu!!!!!\n");
@@ -99,13 +100,13 @@ void Quiz(char quiz[])
 			printf("ERRROOOOOOOOOOOOU!!!!!...\n");
 		}
 		if(contadorQuiz >= 3){
-			printf("\nBom...Voçê ganhou seu copo da agua + um garrafa de vinho GRATIIIIIIS PARABÉNS\n");
+			printf("\nBom...VoÃ§Ãª ganhou seu copo da agua + um garrafa de vinho GRATIIIIIIS PARABÃ‰NS\n");
 			exit(0);
 		}
 		else{
 			printf("\n(acertos = %d /3)\n", contadorQuiz);
-			printf("Voçê não acertou todas perguntas do QUIZ...\nVoçê perdeuuu...AHAHAHHAAH!!!!\n");
-			printf("\nObrigado por participar! Não esqueça de pedir seu copo d'água na proxima visita!!!.\n\n");    
+			printf("VoÃ§Ãª nÃ£o acertou todas perguntas do QUIZ...\nVoÃ§Ãª perdeuuu...AHAHAHHAAH!!!!\n");
+			printf("\nObrigado por participar! NÃ£o esqueÃ§a de pedir seu copo d'Ã¡gua na proxima visita!!!.\n\n");    
 			exit(0);
 		}
 	}
@@ -113,14 +114,14 @@ void Quiz(char quiz[])
 
 void Feedback(char feedback[])
 {
-    printf("\nJa vai???\nParticipe da nossa promoção, 'O Dedo Duro', onde nossos clientes ganham brindes, em troca do feedback sobre nossos serviços.\n");
+    printf("\nJa vai???\nParticipe da nossa promoÃ§Ã£o, 'O Dedo Duro', onde nossos clientes ganham brindes, em troca do feedback sobre nossos serviÃ§os.\n");
 	printf("\nDe o seu feedback:\n");
 	scanf("%s", feedback);
 }
 
 void Sair()
 {
-	printf("\nNão se vá!\nEu já não posso suportar\nEsta minha vida de amargura\nNão se vá!\nEstou partindo porque sei\nQue você já não mais me ama...\n");
+	printf("\nNÃ£o se vÃ¡!\nEu jÃ¡ nÃ£o posso suportar\nEsta minha vida de amargura\nNÃ£o se vÃ¡!\nEstou partindo porque sei\nQue vocÃª jÃ¡ nÃ£o mais me ama...\n");
 }
 
 int main()
@@ -135,7 +136,7 @@ int main()
 		printf("[2] - Menu Bebidas.\n");
 		printf("[3] - Menu Acompanhamentos.\n");
 		printf("[4] - Quiz.\n");
-		printf("[5] - FeedBack (Participe da promoção 'O DEDO DURO'.)\n");
+		printf("[5] - FeedBack (Participe da promoÃ§Ã£o 'O DEDO DURO'.)\n");
 		printf("[0] - Sair.\n");
 			
     do
@@ -147,7 +148,7 @@ int main()
         switch(continuar)
         {
         	default:
-                printf("\n\nDIGITE UMA OPÇÃO VALIDA!!!\n\n");
+                printf("\n\nDIGITE UMA OPÃ‡ÃƒO VALIDA!!!\n\n");
                 break;
             case 1:
             	Comida();
@@ -162,11 +163,11 @@ int main()
 		            }
 	          		else if(pedido == 2){
 		                total += 4.00;
-					    printf("[2] - Macarrão - R$ 4.00\n");
+					    printf("[2] - MacarrÃ£o - R$ 4.00\n");
 					}					
 		            else if(pedido == 3){
 		                total += 4.00;
-		                printf("[3] - Feijão - R$ 4.00\n");
+		                printf("[3] - FeijÃ£o - R$ 4.00\n");
 		            }
 					else if(pedido == 4){
 						total += 6.00;
@@ -214,15 +215,15 @@ int main()
 				    } 
 				    else if(pedido == 15){
 						total += 5.00;
-						printf("[15] - Porção de Batatas - R$ 5.00\n");
+						printf("[15] - PorÃ§Ã£o de Batatas - R$ 5.00\n");
 					}
 	          		else if(pedido == 16){
 						total += 5.00;
-				    	printf("[16] - Porção de Bacon - R$ 5.00\n");
+				    	printf("[16] - PorÃ§Ã£o de Bacon - R$ 5.00\n");
 					}
 	          		else if(pedido == 17){
 						total += 5.00;
-						printf("[17] - Porção de Mandioca - R$ 5.00\n");	
+						printf("[17] - PorÃ§Ã£o de Mandioca - R$ 5.00\n");	
 					}
 		            else if(pedido == 18){
 		                total1 += total;
@@ -235,7 +236,7 @@ int main()
 						printf("[22] - Reiniciar pedido (Excluira totos os pedidos)\n");	
 						printf("[23] - Para encerrar o pedido e ter o total a ser pago\n");
 						printf("[24] - Para encerrar o pedido e participar do QUIZ\n");
-						printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoção 'O dedo duro'!)\n");
+						printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoÃ§Ã£o 'O dedo duro'!)\n");
 		                total=0;
    		            	system("pause");
 					}
@@ -249,14 +250,14 @@ int main()
 		            	Acompanhamento();
 		            }
 		            else if(pedido == 22){
-		            	printf("\nSeus pedidos foram excluidos e seu total é R$0.00 novamente.\n");
+		            	printf("\nSeus pedidos foram excluidos e seu total Ã© R$0.00 novamente.\n");
 		            	printf("\nEscolha como prosseguir\n");
 						printf("[19] - Para mostrar o cardapio comida novamente\n");
 						printf("[20] - Para mostrar o cardapio de bebidas\n");
 						printf("[21] - Para mostrar o cardapio de acompanhamentos\n");
 						printf("[23] - Para encerrar o pedido e ter o total a ser pago\n");
 						printf("[24] - Para encerrar o pedido e participar do QUIZ\n");
-						printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoção 'O dedo duro'!)\n");
+						printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoÃ§Ã£o 'O dedo duro'!)\n");
 		                total=0;
 						total1 = total;
 						contador = 0;
@@ -264,7 +265,7 @@ int main()
 		            else if(pedido == 23){
 		                total1 += total;
 		                printf("Seu total foi de R$ %.2f, com %d pedido(s)\n\n", total1, contador);
-		                printf("Obrigado pela preferência, Volte sempre!!!\n");
+		                printf("Obrigado pela preferÃªncia, Volte sempre!!!\n");
 		                exit(0);
 					}
 					else if(pedido == 24){
@@ -288,16 +289,16 @@ int main()
 						printf("\nObrigado por participar! ...Seu dedo duro!!!.\n\n");    
 					    total1 += total;
 			            printf("Seu total foi de R$ %.2f, com %d pedido(s)\n\n", total1, contador);
-			            printf("Obrigado pela preferência, Volte sempre!!!\n");
+			            printf("Obrigado pela preferÃªncia, Volte sempre!!!\n");
 						exit(0);
 					return 0;
 					}
 					else if(pedido > 25){
-						printf("\n\nDIGITE UMA OPÇÃO VALIDA!!!\n\n");
+						printf("\n\nDIGITE UMA OPÃ‡ÃƒO VALIDA!!!\n\n");
 
 					}
 					if(pedido != 18 && pedido != 22 && pedido != 23 && pedido != 24 && pedido != 25){
-    					printf("valor até agora: R$ %.2f\n", total);
+    					printf("valor atÃ© agora: R$ %.2f\n", total);
 					}
 				}
 	        case 2:
@@ -313,11 +314,11 @@ int main()
 		            }
 	          		else if(pedido == 2){
 		                total += 4.00;
-					    printf("[2] - Macarrão - R$ 4.00\n");
+					    printf("[2] - MacarrÃ£o - R$ 4.00\n");
 					}					
 		            else if(pedido == 3){
 		                total += 4.00;
-		                printf("[3] - Feijão - R$ 4.00\n");
+		                printf("[3] - FeijÃ£o - R$ 4.00\n");
 		            }
 					else if(pedido == 4){
 						total += 6.00;
@@ -365,15 +366,15 @@ int main()
 				    } 
 				    else if(pedido == 15){
 						total += 5.00;
-						printf("[15] - Porção de Batatas - R$ 5.00\n");
+						printf("[15] - PorÃ§Ã£o de Batatas - R$ 5.00\n");
 					}
 	          		else if(pedido == 16){
 						total += 5.00;
-				    	printf("[16] - Porção de Bacon - R$ 5.00\n");
+				    	printf("[16] - PorÃ§Ã£o de Bacon - R$ 5.00\n");
 					}
 	          		else if(pedido == 17){
 						total += 5.00;
-						printf("[17] - Porção de Mandioca - R$ 5.00\n");	
+						printf("[17] - PorÃ§Ã£o de Mandioca - R$ 5.00\n");	
 					}
 				   	else if(pedido == 18){
 		                total1 += total;
@@ -386,7 +387,7 @@ int main()
 						printf("[22] - Reiniciar pedido (Excluira totos os pedidos)\n");	
 						printf("[23] - Para encerrar o pedido e ter o total a ser pago\n");
 						printf("[24] - Para encerrar o pedido e participar do QUIZ\n");
-						printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoção 'O dedo duro'!)\n");
+						printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoÃ§Ã£o 'O dedo duro'!)\n");
 		                total=0;
 						system("pause");		              
 					}
@@ -400,14 +401,14 @@ int main()
 		            	Acompanhamento();
 		            }
 		            else if(pedido == 22){
-						printf("\nSeus pedidos foram excluidos e seu total é R$0.00 novamente.\n");
+						printf("\nSeus pedidos foram excluidos e seu total Ã© R$0.00 novamente.\n");
 						printf("\nEscolha como prosseguir\n");
 						printf("[19] - Para mostrar o cardapio comida novamente\n");
 						printf("[20] - Para mostrar o cardapio de bebidas\n");
 						printf("[21] - Para mostrar o cardapio de acompanhamentos\n");
 						printf("[23] - Para encerrar o pedido e ter o total a ser pago\n");
 						printf("[24] - Para encerrar o pedido e participar do QUIZ\n");
-						printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoção 'O dedo duro'!)\n");
+						printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoÃ§Ã£o 'O dedo duro'!)\n");
 		                total=0;
 						total1 = total;
 						contador = 0;
@@ -415,7 +416,7 @@ int main()
 		            else if(pedido == 23){
 		                total1 += total;
 		                printf("Seu total foi de R$ %.2f, com %d pedido(s)\n\n", total1, contador);
-		                printf("Obrigado pela preferência, Volte sempre!!!\n");
+		                printf("Obrigado pela preferÃªncia, Volte sempre!!!\n");
 					}
 					else if(pedido == 24){
 						if(total == 0.00){
@@ -438,11 +439,11 @@ int main()
 						printf("\nObrigado por participar! ...Seu dedo duro!!!.\n\n");    
 					    total1 += total;
 			            printf("Seu total foi de R$ %.2f, com %d pedido(s)\n\n", total1, contador);
-			            printf("Obrigado pela preferência, Volte sempre!!!\n");
+			            printf("Obrigado pela preferÃªncia, Volte sempre!!!\n");
 						exit(0);
 					}	
 					if(pedido != 18 && pedido != 22 && pedido != 23 && pedido != 24 && pedido != 25){
-    					printf("valor até agora: R$ %.2f\n", total);
+    					printf("valor atÃ© agora: R$ %.2f\n", total);
 					}
 				}
 			case 3:
@@ -458,11 +459,11 @@ int main()
 		            }
 	          		else if(pedido == 2){
 		                total += 4.00;
-					    printf("[2] - Macarrão - R$ 4.00\n");
+					    printf("[2] - MacarrÃ£o - R$ 4.00\n");
 					}					
 		            else if(pedido == 3){
 		                total += 4.00;
-		                printf("[3] - Feijão - R$ 4.00\n");
+		                printf("[3] - FeijÃ£o - R$ 4.00\n");
 		            }
 					else if(pedido == 4){
 						total += 6.00;
@@ -510,15 +511,15 @@ int main()
 				    } 
 				    else if(pedido == 15){
 						total += 5.00;
-						printf("[15] - Porção de Batatas - R$ 5.00\n");
+						printf("[15] - PorÃ§Ã£o de Batatas - R$ 5.00\n");
 					}
 	          		else if(pedido == 16){
 						total += 5.00;
-				    	printf("[16] - Porção de Bacon - R$ 5.00\n");
+				    	printf("[16] - PorÃ§Ã£o de Bacon - R$ 5.00\n");
 					}
 	          		else if(pedido == 17){
 						total += 5.00;
-						printf("[17] - Porção de Mandioca - R$ 5.00\n");	
+						printf("[17] - PorÃ§Ã£o de Mandioca - R$ 5.00\n");	
 					}
 					else if(pedido == 18){
 		                total1 += total;
@@ -531,7 +532,7 @@ int main()
 						printf("[22] - Reiniciar pedido (Excluira totos os pedidos)\n");	
 						printf("[23] - Para encerrar o pedido e ter o total a ser pago\n");
 						printf("[24] - Para encerrar o pedido e participar do QUIZ\n");
-						printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoção 'O dedo duro'!)\n");
+						printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoÃ§Ã£o 'O dedo duro'!)\n");
 		                total=0;
 		                system("pause");
 					}
@@ -545,14 +546,14 @@ int main()
 		            	Acompanhamento();
 		            }
 		            else if(pedido == 22){
-						printf("\nSeus pedidos foram excluidos e seu total é R$0.00 novamente.\n");
+						printf("\nSeus pedidos foram excluidos e seu total Ã© R$0.00 novamente.\n");
 		            	printf("\nEscolha como prosseguir\n");
 						printf("[19] - Para mostrar o cardapio comida novamente\n");
 						printf("[20] - Para mostrar o cardapio de bebidas\n");
 						printf("[21] - Para mostrar o cardapio de acompanhamentos\n");
 						printf("[23] - Para encerrar o pedido e ter o total a ser pago\n");
 						printf("[24] - Para encerrar o pedido e participar do QUIZ\n");
-						printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoção 'O dedo duro'!)\n");
+						printf("[25] - Para encerrar o pedido e participar do nosso feedback e da promoÃ§Ã£o 'O dedo duro'!)\n");
 		                total=0;
 						total1 = total;
 						contador = 0;
@@ -560,7 +561,7 @@ int main()
 		            else if(pedido == 23){
 		                total1 += total;
 		                printf("Seu total foi de R$ %.2f, com %d pedido(s)\n\n", total1, contador);
-		                printf("Obrigado pela preferência, Volte sempre!!!\n");
+		                printf("Obrigado pela preferÃªncia, Volte sempre!!!\n");
 					}
 					else if(pedido == 24){
 						if(total <= 0){
@@ -583,11 +584,11 @@ int main()
 						printf("\nObrigado por participar! ...Seu dedo duro!!!.\n\n");    
 					    total1 += total;
 			            printf("Seu total foi de R$ %.2f, com %d pedido(s)\n\n", total1, contador);
-			            printf("Obrigado pela preferência, Volte sempre!!!\n");
+			            printf("Obrigado pela preferÃªncia, Volte sempre!!!\n");
 						exit(0);
 					}	
 					if(pedido != 18 && pedido != 22 && pedido != 23 && pedido != 24 && pedido != 25){
-    					printf("valor até agora: R$ %.2f\n", total);
+    					printf("valor atÃ© agora: R$ %.2f\n", total);
 					}
 					
 				}
